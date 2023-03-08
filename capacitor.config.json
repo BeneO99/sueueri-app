@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "SueueriApp",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

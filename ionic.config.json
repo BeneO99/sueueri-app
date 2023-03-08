@@ -1,0 +1,8 @@
+{
+  "name": "SueueriApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "cf4aac55"
+}
