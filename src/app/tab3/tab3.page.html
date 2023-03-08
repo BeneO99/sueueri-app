@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Rechnungen
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,29 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Rechnungen</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-card>
+    <h1>Offener Betrag</h1>
+    <h3>25 €</h3> <!--Backend call-->
+  </ion-card>
+
+  <ion-card>
+    <ion-grid [fixed]="true">
+    <ion-row>
+      <ion-col>Was</ion-col>
+      <ion-col>Betrag</ion-col>
+      <ion-col>Gezahlt</ion-col>
+      <ion-col>Rechnugs Datum</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>Pulli</ion-col>
+      <ion-col>25€</ion-col>
+      <ion-col>nein</ion-col>
+      <ion-col>01.01.23</ion-col>
+    </ion-row>  
+  </ion-grid>
+  </ion-card>
 </ion-content>
