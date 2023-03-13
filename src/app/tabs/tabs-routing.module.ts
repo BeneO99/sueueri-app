@@ -8,18 +8,20 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
-      },
-      {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
-      },
-      {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        path: 'calander',
+        loadChildren: () => import('../calander/calander.module').then(m => m.CalanderPageModule)
 
-      },
+      },    
+      {
+        path: 'events',
+        loadChildren: () => import('../events/events.module').then(m => m.EventsPageModule)
+
+      },    
+      {
+        path: 'debts',
+        loadChildren: () => import('../debts/debts.module').then(m => m.DebtsPageModule)
+
+      },    
       {
         path: 'informations',
         loadChildren: () => import('../informations/informations.module').then(m => m.InformationsPageModule)
@@ -32,14 +34,14 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/calander',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/calander',
     pathMatch: 'full'
   }
 ];
