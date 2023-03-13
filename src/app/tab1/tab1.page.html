@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Zeitplaner
+    <ion-title color="primary">
+      Termine
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,25 +9,38 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Zeitplaner</ion-title>
+      <ion-title size="large">Termine</ion-title>
     </ion-toolbar>
   </ion-header>
 
 <ion-card>
-  <ion-grid [fixed]="true">
+  
+  <ion-grid [fixed]="false">
   <ion-row>
     <ion-col>Name</ion-col>
     <ion-col>Datum</ion-col>
     <ion-col>Ort</ion-col>
-    <ion-col>Dabei</ion-col>
+    <ion-col>+/-</ion-col>
     <ion-col>Grund</ion-col>
   </ion-row>
   <ion-row>
     <ion-col>Teufel Feier</ion-col>
     <ion-col>01.05.23</ion-col>
     <ion-col>Teufel Clubheim</ion-col>
-    <ion-col>Ja</ion-col>
-    <ion-col>-</ion-col>
+    <ion-col>
+       <ion-item>
+        <ion-col>Entweder Checkbox oder FAB</ion-col>
+      <ion-checkbox color="success" checked="true"></ion-checkbox>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-list>
+      <ion-item>
+        <ion-label floating>Floating label</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      </ion-list>
+    </ion-col>
   </ion-row>
 
 </ion-grid>
