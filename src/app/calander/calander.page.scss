@@ -1,0 +1,26 @@
+ion-fab-button {
+    --background: #b7f399;
+    --background-activated: #87d361;
+    --background-hover: #a3e681;
+    --box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.3), 1px 2px 2px 1px rgba(0,0,0,.15);
+    --color: black;
+  }
+
+  ion-grid {
+    --ion-grid-width: 100%;
+  
+    --ion-grid-width-xs: 50%;
+    --ion-grid-width-sm: 288px;
+    --ion-grid-width-md: 384px;
+    --ion-grid-width-lg: 480px;
+    --ion-grid-width-xl: 570px;
+  }
+
+  ion-col {
+    --ion-padding: 16px;
+    --border-radius: 4px;
+    background-color: #38c148;
+    border: solid 4px #fff;
+    color: #fff;
+    text-align: center;
+  }

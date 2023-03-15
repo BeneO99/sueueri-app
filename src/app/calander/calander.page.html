@@ -13,13 +13,29 @@
     </ion-toolbar>
   </ion-header>
 
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="pencil-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="globe"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
 <ion-card>
-  
   <ion-grid [fixed]="false">
   <ion-row>
-    <ion-col>Name</ion-col>
-    <ion-col>Datum</ion-col>
-    <ion-col>Ort</ion-col>
+    <ion-col size="auto">Name</ion-col>
+    <ion-col size="auto">Datum</ion-col>
+    <ion-col size="auto">Ort</ion-col>
     <ion-col>+/-</ion-col>
     <ion-col>Wieso?</ion-col>
   </ion-row>
@@ -28,10 +44,28 @@
     <ion-col>01.05.23</ion-col>
     <ion-col>Teufel Clubheim</ion-col>
     <ion-col>
-       <ion-item>
-        <ion-col>Entweder Checkbox oder FAB</ion-col>
-      <ion-checkbox color="success" checked="true"></ion-checkbox>
-      </ion-item>
+      <ion-fab horizontal="center" vertical="center">
+        <ion-fab-button size="small" color="medium">
+          <ion-icon name="alert-sharp"></ion-icon>
+        </ion-fab-button>
+
+        <ion-fab-list side="start">
+          <ion-fab-button size="default" color="success">
+            <ion-icon name="checkmark-sharp"></ion-icon>
+          </ion-fab-button>
+        </ion-fab-list>
+        <ion-fab-list side="top">
+          <ion-fab-button size="large" color="warning">
+            <ion-icon name="help-sharp"></ion-icon>
+          </ion-fab-button>
+        </ion-fab-list>
+        <ion-fab-list side="end">
+          <ion-fab-button color="danger">
+            <ion-icon name="close-sharp"></ion-icon>
+          </ion-fab-button>
+        </ion-fab-list>
+
+      </ion-fab>
     </ion-col>
     <ion-col>
       <ion-list>
