@@ -1,17 +1,5 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Termine
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Termine</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content color="dark" [fullscreen]="true">
 
   <ion-fab slot="fixed" vertical="bottom" horizontal="end">
     <ion-fab-button>
@@ -32,18 +20,18 @@
 
 <ion-card>
   <ion-grid [fixed]="false">
-  <ion-row>
-    <ion-col size="auto">Name</ion-col>
-    <ion-col size="auto">Datum</ion-col>
-    <ion-col size="auto">Ort</ion-col>
-    <ion-col>+/-</ion-col>
-    <ion-col>Wieso?</ion-col>
+  <ion-row class="wrapper">
+    <ion-col class="one">Name</ion-col>
+    <ion-col class="two">Datum</ion-col>
+    <ion-col class="three">Ort</ion-col>
+    <ion-col class="four">+/-</ion-col>
+    <ion-col class="five">Wieso?</ion-col>
   </ion-row>
-  <ion-row>
-    <ion-col>Teufel Feier</ion-col>
-    <ion-col>01.05.23</ion-col>
-    <ion-col>Teufel Clubheim</ion-col>
-    <ion-col>
+  <ion-row class="wrapper">
+    <ion-col class="one">Teufel Feier</ion-col>
+    <ion-col class="two">01.05.23</ion-col>
+    <ion-col class="three">Teufel Clubheim</ion-col>
+    <ion-col class="four">
       <ion-fab horizontal="center" vertical="center">
         <ion-fab-button size="small" color="medium">
           <ion-icon name="alert-sharp"></ion-icon>
@@ -67,7 +55,7 @@
 
       </ion-fab>
     </ion-col>
-    <ion-col>
+    <ion-col class="five">
       <ion-list>
   
         <ion-item>
@@ -81,7 +69,6 @@
 
 </ion-grid>
 </ion-card>
-
 
 
 </ion-content>

@@ -6,9 +6,8 @@ ion-fab-button {
     --color: black;
   }
 
-  ion-grid {
+ion-grid {
     --ion-grid-width: 100%;
-  
     --ion-grid-width-xs: 50%;
     --ion-grid-width-sm: 288px;
     --ion-grid-width-md: 384px;
@@ -16,11 +15,52 @@ ion-fab-button {
     --ion-grid-width-xl: 570px;
   }
 
-  ion-col {
-    --ion-padding: 16px;
-    --border-radius: 4px;
+ion-col {
     background-color: #38c148;
-    border: solid 4px #fff;
-    color: #fff;
-    text-align: center;
-  }
+    border: solid 3px #fff;
+    border-color: #5c6159;
+    border-radius: 15px;
+    }
+
+.grid-text {
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    justify-content: center;
+    color: #000000;
+}
+
+.background{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+ }
+
+.wrapper{
+  text-align: center;
+  justify-content: center;
+  gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+ .two {
+  grid-column: 2;
+  grid-row: 2;
+}
+.three {
+  grid-column: 3;
+  grid-row: 3;
+}
+.four {
+  grid-column: 4;
+  grid-row: 4;
+}
+.five {
+  grid-column: 5;
+  grid-row: 5;
+}
