@@ -1,23 +1,6 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Teilnehmer
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Teilnehmer</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-card>
-    <ion-button (click)="popupParticipant()" expand="block" fill="clear" shape="round">
+<ion-content color="background">
+    <ion-button class="event" (click)="popupParticipant()" expand="block" fill="clear" shape="round">
       Teufel Feier
     </ion-button>
     <ion-img  /> <!--Backend call image path-->
-  </ion-card>
-
 </ion-content>
