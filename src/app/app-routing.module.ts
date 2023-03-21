@@ -16,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'calander',
-    loadChildren: () => import('./calander/calander.module').then( m => m.CalanderPageModule)
+    loadChildren: () => import('./calendar/calendar.module').then( m => m.CalendarPageModule)
   },
   {
     path: 'debts',
@@ -25,6 +25,10 @@ const routes: Routes = [
   {
     path: 'events',
     loadChildren: () => import('./events/events.module').then( m => m.EventsPageModule)
+  },
+  {
+    path: 'calendar',
+    loadChildren: () => import('./calendar/calendar.module').then( m => m.CalendarPageModule)
   }
 
 ];

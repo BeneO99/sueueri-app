@@ -8,8 +8,8 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'calander',
-        loadChildren: () => import('../calander/calander.module').then(m => m.CalanderPageModule)
+        path: 'calendar',
+        loadChildren: () => import('../calendar/calendar.module').then(m => m.CalendarPageModule)
 
       },    
       {
@@ -34,14 +34,14 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/calander',
+        redirectTo: '/tabs/calendar',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/calander',
+    redirectTo: '/tabs/calendar',
     pathMatch: 'full'
   }
 ];

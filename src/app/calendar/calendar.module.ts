@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CalanderPageRoutingModule } from './calander-routing.module';
+import { CalendarPageRoutingModule } from './calendar-routing.module';
 
-import { CalanderPage } from './calander.page';
+import { CalendarPage } from './calendar.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CalanderPageRoutingModule
+    CalendarPageRoutingModule
   ],
-  declarations: [CalanderPage]
+  declarations: [CalendarPage]
 })
-export class CalanderPageModule {}
+export class CalendarPageModule {}
